@@ -10,9 +10,12 @@ O sistema possui duas interfaces com papéis distintos, conforme solicitado nos 
 
 ---
 
-## Membros do Grupo
+## Desenvolvedores
 
-* **Desenvolvido por:** `Gabriel Steffens & Lucas Weigel`
+| Foto                                                                             | Desenvolvedor      | GitHub                                             |
+| :------------------------------------------------------------------------------- | :----------------- | :------------------------------------------------- |
+| [<img src="https://github.com/gabste8831.png?size=75" width="75px;"/>](https://github.com/gabste8831) | Gabriel Steffens   | [@gabste8831](https://github.com/gabste8831)       |
+| [<img src="https://github.com/Lucas1063.png?size=75" width="75px;"/>](https://github.com/Lucas1063)   | Lucas Weigel       | [@Lucas1063](https://github.com/Lucas1063)         |
 
 ---
 
