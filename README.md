@@ -25,39 +25,74 @@ O sistema possui duas interfaces com papéis distintos, conforme solicitado nos 
 
 ## Como Instalar e Executar a Aplicação
 
-Siga os passos abaixo para configurar e executar o ambiente de desenvolvimento localmente.
+Siga os passos abaixo para clonar, configurar e executar o projeto em seu ambiente de desenvolvimento local.
 
 ### Pré-requisitos
-* Node.js (versão 16 ou superior)
-* NPM (geralmente instalado com o Node.js)
-
-### 1. Backend (Servidor)
-
-Abra um terminal, navegue até a pasta do backend e instale as dependências:
+Antes de começar, certifique-se de que você tem o **Node.js** e o **NPM** instalados. Você pode verificar as versões executando os seguintes comandos no seu terminal:
 ```bash
+node -v
+npm -v
+```
+Recomenda-se Node.js v16 ou superior.
+
+### Passo a Passo
+
+**1. Clonar o Repositório**
+
+Primeiro, clone este repositório para a sua máquina local usando o seguinte comando:
+```bash
+git clone [https://github.com/gabste8831/App-venda-ingressos.git](https://github.com/gabste8831/App-venda-ingressos.git)
+```
+Depois, navegue para a pasta do projeto:
+```bash
+cd App-venda-ingressos
+```
+
+**2. Configurar e Iniciar o Backend (Servidor)**
+
+O backend é responsável por toda a lógica de eventos e o controle dos ingressos.
+
+Abra um **primeiro terminal** e execute os seguintes comandos:
+```bash
+# Navegue para a pasta do backend
 cd backend
+
+# Instale todas as dependências necessárias
 npm install
-```
-Para iniciar o servidor, execute:
-```bash
+
+# Inicie o servidor em modo de desenvolvimento
 npm start
 ```
-O servidor estará rodando em `http://localhost:4000` e pronto para receber conexões.
+Após executar `npm start`, você deverá ver a seguinte mensagem, indicando que o servidor está pronto para receber conexões:
+`Servidor da bilheteria rodando na porta 4000`
 
-### 2. Frontend (Cliente)
+**Mantenha este terminal aberto e rodando.**
 
-Abra um **novo terminal**, navegue até a pasta da aplicação React e instale as dependências:
+**3. Configurar e Iniciar o Frontend (Cliente)**
+
+O frontend é a interface visual com a qual os usuários (torcedor e administrador) irão interagir.
+
+Abra um **segundo terminal** (mantenha o terminal do backend rodando) e execute os seguintes comandos:
 ```bash
+# A partir da pasta raiz do projeto, navegue para a pasta do frontend
 cd frontend/bilheteria-app
+
+# Instale todas as dependências necessárias
 npm install
-```
-Para iniciar o cliente, execute:
-```bash
+
+# Inicie a aplicação React
 npm start
 ```
-A aplicação abrirá automaticamente no seu navegador. Acesse as seguintes URLs:
+Este comando abrirá automaticamente uma nova aba no seu navegador padrão.
+
+**4. Acessar a Aplicação**
+
+Para ver a aplicação funcionando e testar a interação em tempo real, abra as seguintes URLs em abas separadas do seu navegador:
+
 * **Página do Torcedor:** `http://localhost:3000`
 * **Página do Administrador:** `http://localhost:3000/admin`
+
+Agora, você pode realizar ações na página do administrador (como "Abrir Vendas") e ver os resultados refletidos instantaneamente na página do torcedor.
 
 ---
 
