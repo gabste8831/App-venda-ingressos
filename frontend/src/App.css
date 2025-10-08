@@ -1,0 +1,155 @@
+/* --- Configurações Gerais --- */
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.App {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* --- Cabeçalho --- */
+.App-header {
+  background-color: #1E1E1E;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #2D2D2D;
+}
+
+.App-header h1 {
+  color: #00BFFF; /* Destaque em azul claro */
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.App-header p {
+  color: #A0A0A0;
+  margin: 5px 0 0;
+}
+
+/* --- Conteúdo Principal --- */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* --- Painéis (Torcedor e Admin) --- */
+.torcedor-panel, .admin-panel {
+  background-color: #1E1E1E;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #2D2D2D;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+  color: #00BFFF; /* Destaque em azul claro */
+  margin-top: 0;
+  border-bottom: 2px solid #00BFFF;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* --- Estilos do Painel do Torcedor --- */
+.info-box {
+  margin-bottom: 20px;
+}
+
+.ingressos {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ingressos strong {
+  color: #00BFFF; /* Destaque em azul claro */
+  font-size: 1.8rem;
+}
+
+.status-aguardando, .status-encerrada, .status-abertas, .status-esgotado {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  color: #E0E0E0;
+}
+.status-aguardando { background-color: #2D2D2D; }
+.status-encerrada { background-color: #dc3545; }
+.status-abertas { background-color: #28a745; }
+.status-esgotado { background-color: #A0A0A0; color: #121212; }
+
+/* --- Botões --- */
+button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.torcedor-button.reservar { background-color: #00BFFF; color: #121212; }
+.torcedor-button.reservar:hover { background-color: #1abfff; transform: translateY(-2px); }
+
+.torcedor-button.confirmar { background-color: #28a745; color: #E0E0E0; }
+.torcedor-button.confirmar:hover { background-color: #32c453; transform: translateY(-2px); }
+
+.admin-button.start { background-color: #28a745; color: #E0E0E0; }
+.admin-button.end { background-color: #dc3545; color: #E0E0E0; }
+
+.countdown {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #00BFFF; /* Destaque em azul claro */
+  font-weight: bold;
+}
+
+.feedback {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(0, 191, 255, 0.1);
+  border: 1px solid #00BFFF;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #00BFFF;
+}
+
+/* --- Tela de Carregamento e Rodapé --- */
+.loading-screen {
+  font-size: 2rem;
+  color: #00BFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App-footer {
+  margin-top: 40px;
+  color: #A0A0A0;
+  font-size: 0.9rem;
+}
+
+.nav-link {
+  color: #00BFFF;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
