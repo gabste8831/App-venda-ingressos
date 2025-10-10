@@ -44,7 +44,7 @@ Recomenda-se Node.js v16 ou superior.
 
 Primeiro, clone este repositório para a sua máquina local usando o seguinte comando:
 ```bash
-git clone [https://github.com/gabste8831/App-venda-ingressos.git](https://github.com/gabste8831/App-venda-ingressos.git)
+git clone [https://github.com/gabste8831/App-venda-ingressos.git]
 ```
 Depois, navegue para a pasta do projeto:
 ```bash
